@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styles from "./footer.module.css"
 import Link from "next/link"
-import { links, locations } from "@/app/lib/data"
+import { links, locations } from "@/lib/data"
 
 const Footer = () => {
     return (

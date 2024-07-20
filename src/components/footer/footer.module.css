@@ -1,12 +1,11 @@
 .container {
     height: 375px;
-    width: 95%;
+    width: 100%;
     background-image: linear-gradient(-65deg, var(--mygreen),var(--mygreen),white, white);
-    margin: 10px auto;
-    border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
     
 }
 
