@@ -1,9 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { workers } from "@/lib/data";
 
 export default function Home() {
+
+
+
+
   return (
     <main className={styles.main}>
+
       <div className={styles.top}>
         <div className={styles.topLeft}>
           <div className={styles.titles}>
@@ -23,11 +29,48 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <br />
+
       <div className={styles.divider}>
-        <div className={styles.longLine} />
         <div className={styles.shortLine} />
+        <div className={styles.longLine} />
+      </div>
+      <br />
+      <br />
+      <br />
+      <div className={styles.bottom}>
+        <div className={styles.bottomLeft}>
+          <h2 className={styles.subtitle}>With our agents help,you will find a comfortable place <br />within your budget.</h2>
+          <br />
+          <br />
+          <br />
+          <p className={styles.paragraph}>Welcome to Madulo,the top choice
+            for affordable rental properties tailored
+            specifically for mine workers .<br />
+            <br />We understand the unique needs of those working in the
+            mining industry,and our selection of budget friendly,
+            comfortable housing options is designed to
+            offer you a convinient and restful retreat<br />
+            after a hard days work.
+            <br />
+            <br />
+            With focus on practicality andcomfort ,we provide clean,
+            well-maintained accomodations close to you job site.
+            <br />
+            <br />
+            Explore our listings today and find a place where you
+            can relax and recharge for the days ahead.
+          </p>
+        </div>
+        <div className={styles.bottomRight}>
+
+        </div>
       </div>
 
     </main>
   );
 }
+
+
+
+
