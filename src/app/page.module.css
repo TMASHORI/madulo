@@ -12,7 +12,7 @@
   width: 100%;
   align-items: flex-start;
   justify-content: center;
-  height: 50vh;
+  height: fit-content;
 }
 .topLeft{
   flex: 1;
@@ -33,9 +33,12 @@
   /* margin-bottom: 30px; */
   line-height: 100px;   
 }
-.subtitle{
-  font-size: 25px;
-  color: gray;
+
+
+.paragraph{
+  font-size: 22px;
+  color: black;
+  text-align: start;
 }
 
 .locations >.subtitle{
@@ -89,7 +92,7 @@ width: fit-content;
 
 .divider{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: 5px;
   width: 100%;
   margin: 50px 0;
@@ -100,19 +103,69 @@ width: fit-content;
   height: 100%;
   background: var(--myblue);
   border-radius: 50px;
-  margin-right: 10px;
 }
 
 
 .shortLine{
+  margin-right: 10px;
   width: 20px;
   height: 100%;
   background: var(--myblue);
   border-radius: 50px;
 }
 
+
+.bottom{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  height: fit-content;
+}
+.bottomLeft{
+  flex: 1;
+  height: 100%;
+min-height: 50vh;
+  
+}
+
+.subtitle{
+  font-size: 55px;
+  color: gray;
+  text-align: left;
+  justify-self: flex-start;
+}
+
+.paragraph{
+  font-size: 25px;
+  max-width: 65vw;
+  line-height: 45px;
+  color: black;
+  text-align: start;
+}
+
+.bottomRight{
+  flex: 1;
+  /* background: red; */
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:static;
+  top: 10;
+}
+
+.singleWorker{
+  width: 500px;
+  height: 500px;
+  background: green;
+  top: 0;
+  position: static;
+}
+
 @media (max-width:1024px) {
-  .top{
+  .top,.bottom{
     align-items: center;
     flex-direction: column;
     height: fit-content;

@@ -9,12 +9,12 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-
+      
       <div className={styles.top}>
         <div className={styles.topLeft}>
           <div className={styles.titles}>
             <h1 className={styles.title}>New <span className={styles.highlight}> Job</span>? <br /> No place to <span className={styles.highlight}>Rent</span> ? <br />We are here to help !  </h1>
-            <h2 className={styles.subtitle}>With our agents help,you will find a comfortable place <br />within your budget.</h2>
+
           </div>
         </div>
         <div className={styles.topRight}>
@@ -63,7 +63,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.bottomRight}>
-
+          
         </div>
       </div>
 
