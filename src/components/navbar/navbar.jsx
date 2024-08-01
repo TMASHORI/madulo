@@ -3,7 +3,28 @@ import Image from "next/image"
 import styles from "./Navbar.module.css"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { links } from "@/lib/data"
+// import { links } from "@/lib/data"
+
+const links = [{
+  name: "Rentals",
+  path: "/rentals",
+},
+{
+  name: "Jobs",
+  path: "/jobs",
+},
+{
+  name: "About Us",
+  path: "/about",
+}, {
+  name: "Contact",
+  path: "/contact",
+}
+  , {
+  name: "Reviews",
+  path: "/reviews",
+},
+]
 
 const Navbar = () => {
 

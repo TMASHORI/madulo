@@ -1,15 +1,17 @@
+"use client"
+
 import Image from "next/image";
 import styles from "./page.module.css";
-import { workers } from "@/lib/data";
+import { workers } from "@/lib/data.js";
+import ImageSlider from "@/components/slider/slider"
+
+
 
 export default function Home() {
 
-
-
-
   return (
     <main className={styles.main}>
-      
+
       <div className={styles.top}>
         <div className={styles.topLeft}>
           <div className={styles.titles}>
@@ -19,7 +21,7 @@ export default function Home() {
         </div>
         <div className={styles.topRight}>
           <div className={styles.imageContainer}>
-            <Image src="/map.png" alt="" width={200} height={200} unoptimized />
+            <Image src="/map.png" alt="" width={150} height={150} unoptimized />
           </div>
           <div className={styles.locations}>
             <h3 className={styles.subtitle}>Locations we operate</h3>
@@ -40,7 +42,7 @@ export default function Home() {
       <br />
       <div className={styles.bottom}>
         <div className={styles.bottomLeft}>
-          <h2 className={styles.subtitle}>With our agents help,you will find a comfortable place <br />within your budget.</h2>
+          <h2 className={styles.subtitle}>With our agents help,you will find a comfortable place within your budget.</h2>
           <br />
           <br />
           <br />
@@ -63,7 +65,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.bottomRight}>
-          
+          <ImageSlider/>
         </div>
       </div>
 

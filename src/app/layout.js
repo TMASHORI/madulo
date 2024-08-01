@@ -1,7 +1,8 @@
+
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/navbar";
-import Footer from "@/components/footer/footer";
+import Navbar from "@/components/navbar/navbar"
+import Footer from "@/components/footer/footer"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +12,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // "use client"
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -18,7 +20,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
-        <Footer/>
+        <Footer />
         <p className="copyright">© Copyright 2024. Designed and Developed by Thato Mashori</p>
       </body>
     </html>

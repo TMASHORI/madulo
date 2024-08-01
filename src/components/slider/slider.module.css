@@ -1,0 +1,45 @@
+
+
+.img{
+    height: 50%;
+    width: fit-content;
+    /* border-radius: 100%; */
+    object-fit: contain;
+display: flex;
+align-items: center;
+justify-content: center;
+    /* background: red; */
+    margin: 20px;
+}
+
+.reviewDetails{
+    height: 50%;
+    width: 90%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.name{
+    font-size: 25px;
+    
+}
+
+.occupation{
+    font-size: 15px;
+    color: gray;
+}
+
+.review{
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.qoute{
+    font-size: 25px;
+    color: var(--myorange);
+}

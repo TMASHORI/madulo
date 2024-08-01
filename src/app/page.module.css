@@ -29,10 +29,12 @@
   /* background: red; */
 }
 .title{
-  font-size: 70px;
+  font-size: 50px;
   /* margin-bottom: 30px; */
   line-height: 100px;   
 }
+
+
 
 
 .paragraph{
@@ -47,7 +49,7 @@
 }
 
 .highlight{
-  font-size: 80px;
+  font-size: 60px;
   padding: 5px;
   background: var(--mygreen);
 }
@@ -56,7 +58,7 @@
   flex:1;
   height: fit-content;
   display: flex;
-  padding: 50px;
+  padding: 30px;
 /* background: red; */
 align-items: flex-start;
 justify-content: center;
@@ -93,9 +95,9 @@ width: fit-content;
 .divider{
   display: flex;
   justify-content: flex-end;
-  height: 5px;
+  height: 3px;
   width: 100%;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .longLine{
@@ -130,14 +132,16 @@ min-height: 50vh;
 }
 
 .subtitle{
-  font-size: 55px;
+  font-size: 30px;
   color: gray;
-  text-align: left;
+  text-align: start;
   justify-self: flex-start;
+  width: 100%;
+/*  text-overflow: none;*/
 }
 
 .paragraph{
-  font-size: 25px;
+  font-size: 18px;
   max-width: 65vw;
   line-height: 45px;
   color: black;
@@ -146,23 +150,20 @@ min-height: 50vh;
 
 .bottomRight{
   flex: 1;
-  /* background: red; */
-  width: 100%;
-  min-height: 800px;
   display: flex;
+  /* background: red; */
+  width: 50vw;
+  /* padding: 30px; */
+  margin: 30px;
+  min-height: 400px;
+  display: flex;
+  align-self: center;
   align-items: center;
   justify-content: center;
-  position:static;
-  top: 10;
+  z-index: 0;
+  
 }
 
-.singleWorker{
-  width: 500px;
-  height: 500px;
-  background: green;
-  top: 0;
-  position: static;
-}
 
 @media (max-width:1024px) {
   .top,.bottom{
@@ -181,7 +182,7 @@ min-height: 50vh;
     text-align: center;
   }
   .title{
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 1px;
     text-align: center;
     margin-bottom: 0px;
@@ -195,17 +196,23 @@ min-height: 50vh;
     width: 100%;
   }
   .locations >.subtitle{
-    font-size: 25px;
+    font-size: 30px;
     /* display: none; */
   }
 
   .locations >.location{
     line-height: 60px;
     padding-left: 10px;
+    font-size: 30px;
   }
   .highlight{
-    font-size: 70px;
+    font-size: 50px;
     
+  }
+
+  .bottomRight{
+  width: 90vw;
+  z-index: 0;
   }
 
 }
