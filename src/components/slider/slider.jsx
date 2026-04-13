@@ -11,9 +11,10 @@ import 'swiper/css/scrollbar';
 import { workers } from '@/lib/data';
 import Image from 'next/image';
 
-export default () => {
+
+const Slider =  () => {
     return (
-        <Swiper
+        <Swiper 
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
@@ -34,7 +35,7 @@ export default () => {
                         <div className={styles.reviewDetails}>
                             <h2 className={styles.name}>{worker.name}</h2>
                             <h4 className={styles.occupation}>{worker.occupation}</h4>
-                            <p className={styles.review}><span className={styles.qoute}> "  </span> {worker.review} <span className={styles.qoute}>   "</span></p>
+                            <p className={styles.review}><span className={styles.qoute}> &ldquo; </span> {worker.review} <span className={styles.qoute}>  &rdquo;</span></p>
                         </div>
                     </SwiperSlide>
                 )
@@ -44,3 +45,5 @@ export default () => {
         </Swiper>
     );
 };
+
+export default Slider
